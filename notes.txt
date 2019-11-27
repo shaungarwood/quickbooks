@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/27073419/how-do-i-connect-to-quickbooks-online-via-python
+
+```
+Here's a link to a sample app: github.com/IntuitDeveloper/SampleOAuth2_UsingPythonClient, and a link to the OAuth walkthrough: developer.intuit.com/app/developer/qbo/docs/develop/…. So when you consent on Intuit's auth screen, Intuit will send an authorization code to the "redirect_uri" specified in your AuthClient instance. Then you call "get_bearer_token" on that instance, with your auth code, and you'll get back your access tokens.
+```
+
+https://github.com/IntuitDeveloper/SampleOAuth2_UsingPythonClient
+
+^ i think you'll need to get this running.
