@@ -1,3 +1,14 @@
+sandbox:
+  https://c50.sandbox.qbo.intuit.com/app/homepage
+
+dev homepage:
+  https://developer.intuit.com/app/developer/homepage
+
+greener clean prod:
+  https://c9.qbo.intuit.com/app/homepage
+
+---
+
 https://stackoverflow.com/questions/27073419/how-do-i-connect-to-quickbooks-online-via-python
 
 ```
@@ -7,3 +18,15 @@ Here's a link to a sample app: github.com/IntuitDeveloper/SampleOAuth2_UsingPyth
 https://github.com/IntuitDeveloper/SampleOAuth2_UsingPythonClient
 
 ^ i think you'll need to get this running.
+
+---
+
+This is almost promising:
+
+  https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections/python/python_oauth_client#generate-authorization-url
+
+but it still seems to be thinking i'm making an app for everyone to use.
+
+
+okay, when you define "url", open a seperate window and have nc listen on the redirect port (8000?)
+that'll give you the info you need.
