@@ -16,7 +16,7 @@ def update_config(codes):
     import toml
     config = toml.load("config.toml")
     config['codes'] = codes
-    wth open("config.toml", 'w') as f:
+    with open("config.toml", 'w') as f:
         f.write(toml.dumps(config))
 
 app = Flask(__name__)
@@ -25,11 +25,13 @@ query_string = None
 @app.route("/app/callback")
 def hello():
     query_string = request.__dict__['environ']['QUERY_STRING']
-    query = query_string.split("&")
-    for x in query:
-        param = x.split("=")
-        print(param[0] + "  " + param[1])
-    return "Hello World!"
+    print(query_string)
+    if query_string:
+        codes = parse_codes(query_string)
+        update_config(codes)
+        return "thank you"
+    else:
+        return "no query string passed, thanks!"
 
 if __name__ == "__main__":
     app.run()
