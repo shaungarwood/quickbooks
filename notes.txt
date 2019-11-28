@@ -21,6 +21,10 @@ https://github.com/IntuitDeveloper/SampleOAuth2_UsingPythonClient
 
 ---
 
+https://github.com/sidecars/python-quickbooks
+
+---
+
 This is almost promising:
 
   https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections/python/python_oauth_client#generate-authorization-url

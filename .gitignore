@@ -1,3 +1,4 @@
 config.toml
 .venv
 *.swp
+__pycache__
