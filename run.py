@@ -15,7 +15,14 @@ auth_client = AuthClient(
     )
 url = auth_client.get_authorization_url([Scopes.ACCOUNTING])
 print(url)
-input()
+print("\n\n")
+print("please click link and authorize quickbooks, then [enter]")
+input() # waiting for user to click link and authorize quickbooks
+print("\n\n")
+config = toml.load("config.toml")
+if "codes" not in config:
+    print("something didn't get loaded properly")
+    exit()
 
 #client = QuickBooks(
 #        auth_client=auth_client,
