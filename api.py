@@ -34,7 +34,7 @@ def hello():
         return "no query string passed, thanks!"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(ssl_context='adhoc')
 
 # {'environ':
 #   {'wsgi.version': (1, 0),
